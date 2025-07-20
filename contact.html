@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurent Restaurant - Contact</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Laurent</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for reservations or inquiries</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <div class="contact-item">
+                            <h3>📍 Address</h3>
+                            <p>DHA Phase 8, Karachi<br>Sindh, Pakistan</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📞 Phone</h3>
+                            <p>(021) 123-4567</p>
+                            <p>(0300) 123-4567</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>✉️ Email</h3>
+                            <p>info@laurent.com</p>
+                            <p>reservations@laurent.com</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🕒 Hours</h3>
+                            <p>Monday - Thursday: 11am - 10pm<br>
+                               Friday - Saturday: 11am - 11pm<br>
+                               Sunday: 12pm - 9pm</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🎉 Private Events</h3>
+                            <p>We offer private dining for special occasions. Contact us to learn more about our event packages and catering services.</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🚗 Parking</h3>
+                            <p>Complimentary valet parking available. Street parking also available in the surrounding area.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="reservation">Table Reservation</option>
+                                    <option value="private-event">Private Event</option>
+                                    <option value="catering">Catering Services</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Number of Guests (if reservation)</label>
+                                <select id="guests" name="guests">
+                                    <option value="">Select number of guests</option>
+                                    <option value="1-2">1-2 guests</option>
+                                    <option value="3-4">3-4 guests</option>
+                                    <option value="5-6">5-6 guests</option>
+                                    <option value="7-10">7-10 guests</option>
+                                    <option value="10+">10+ guests</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Find Us</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.2891234567!2d67.0731!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sDHA%20Phase%208%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="location-details">
+                        <h3>Location Details</h3>
+                        <p><strong>Address:</strong> DHA Phase 8, Karachi, Sindh, Pakistan</p>
+                        <p><strong>Landmarks:</strong> Near DHA Phase 8 Commercial Area</p>
+                        <p><strong>Public Transport:</strong> Accessible via local buses and ride-sharing services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Laurent</h3>
+                    <p>Bringing authentic Italian flavors to your table since 1985.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 DHA Phase 8, Karachi, Pakistan</p>
+                    <p>📞 (021) 123-4567</p>
+                    <p>✉️ info@laurent.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Laurent Restaurant. All rights reserved.</p>
+                <div class="created-by">
+                    <p><strong>Created by:</strong> Muhammad Uzair Ali</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

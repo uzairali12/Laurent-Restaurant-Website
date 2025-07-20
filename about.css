@@ -1,0 +1,302 @@
+/* About Page Specific Styles */
+
+/* About Content */
+.about-content {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 23, 34, 0.08);
+    border: 1px solid rgba(227, 196, 145, 0.1);
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: rgb(0, 23, 34);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: rgb(227, 196, 145);
+    margin: 2.5rem 0 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.about-text p {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 23, 34, 0.15);
+    transition: all 0.4s ease;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: 10px;
+    bottom: 10px;
+    background: linear-gradient(135deg, rgb(227, 196, 145), rgba(227, 196, 145, 0.6));
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.about-image img:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+/* Values Section */
+.values-section {
+    margin-bottom: 5rem;
+    background: white;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 23, 34, 0.08);
+    border: 1px solid rgba(227, 196, 145, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(227, 196, 145), rgba(227, 196, 145, 0.6));
+}
+
+.values-section h2 {
+    font-size: 3rem;
+    color: rgb(0, 23, 34);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.value-card {
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.05) 0%, rgba(227, 196, 145, 0.02) 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(227, 196, 145, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgb(227, 196, 145);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.value-card:hover::before {
+    transform: scaleX(1);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.1) 0%, rgba(227, 196, 145, 0.05) 100%);
+    box-shadow: 0 15px 35px rgba(0, 23, 34, 0.1);
+}
+
+.value-card h3 {
+    font-size: 1.4rem;
+    color: rgb(0, 23, 34);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Team Section */
+.team-section {
+    background: linear-gradient(135deg, rgb(0, 23, 34) 0%, rgba(0, 23, 34, 0.95) 100%);
+    color: white;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/placeholder.svg?height=400&width=1200') center/cover;
+    opacity: 0.05;
+}
+
+.team-section h2 {
+    font-size: 3rem;
+    color: rgb(227, 196, 145);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 2;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.team-member {
+    text-align: center;
+    transition: all 0.4s ease;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(227, 196, 145, 0.2);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid rgb(227, 196, 145);
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(227, 196, 145, 0.3);
+}
+
+.team-member:hover img {
+    border-color: #fff;
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.team-member p {
+    color: rgb(227, 196, 145);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* About Page Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 60px 0;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem;
+    }
+    
+    .about-text h2,
+    .values-section h2,
+    .team-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .values-section,
+    .team-section {
+        padding: 3rem 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-grid,
+    .values-section,
+    .team-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .about-text h2,
+    .values-section h2,
+    .team-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .team-member {
+        padding: 1.5rem;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .value-card {
+        padding: 2rem;
+    }
+}

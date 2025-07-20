@@ -1,0 +1,309 @@
+/* Menu Page Specific Styles */
+
+/* Menu Styles */
+.menu {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.menu-category {
+    margin-bottom: 4rem;
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 34, 0.08);
+    border: 1px solid rgba(227, 196, 145, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(227, 196, 145), rgba(227, 196, 145, 0.6));
+}
+
+.menu-category h2 {
+    font-size: 2.5rem;
+    color: rgb(0, 23, 34);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.menu-category h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: rgb(227, 196, 145);
+    border-radius: 2px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.menu-item:hover {
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.05) 0%, rgba(227, 196, 145, 0.02) 100%);
+    border-color: rgba(227, 196, 145, 0.2);
+    transform: translateX(5px);
+}
+
+.item-info h3 {
+    font-size: 1.4rem;
+    color: rgb(0, 23, 34);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(227, 196, 145);
+    min-width: 80px;
+    text-align: right;
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.1) 0%, rgba(227, 196, 145, 0.05) 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(227, 196, 145, 0.2);
+}
+
+/* Special Category Styling */
+.menu-category:nth-child(odd) {
+    background: linear-gradient(135deg, rgba(0, 23, 34, 0.02) 0%, rgba(0, 23, 34, 0.01) 100%);
+}
+
+/* Premium sections styling */
+.menu-category:has(h2:contains("Premium Steaks")),
+.menu-category:has(h2:contains("Fresh Seafood")),
+.menu-category:has(h2:contains("Continental Classics")) {
+    border: 2px solid rgba(227, 196, 145, 0.3);
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.08) 0%, rgba(227, 196, 145, 0.03) 100%);
+}
+
+/* Highlight premium items */
+.menu-category:nth-child(5) .menu-item:hover, /* Premium Steaks */
+.menu-category:nth-child(6) .menu-item:hover, /* Fresh Seafood */
+.menu-category:nth-child(7) .menu-item:hover { /* Continental Classics */
+    background: linear-gradient(135deg, rgba(227, 196, 145, 0.12) 0%, rgba(227, 196, 145, 0.06) 100%);
+    box-shadow: 0 4px 15px rgba(227, 196, 145, 0.2);
+}
+
+/* Menu Note Section */
+.menu-note {
+    background: linear-gradient(135deg, rgb(0, 23, 34) 0%, rgba(0, 23, 34, 0.95) 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('assets/hero.jpg') center/cover;
+    opacity: 0.05;
+}
+
+.menu-note p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-note strong {
+    color: rgb(227, 196, 145);
+    font-weight: 600;
+}
+
+/* Category Icons */
+.menu-category h2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+/* Add specific icons for each category */
+.menu-category:nth-child(1) h2::before { content: '🥗'; font-size: 1.5rem; }
+.menu-category:nth-child(2) h2::before { content: '🍲'; font-size: 1.5rem; }
+.menu-category:nth-child(3) h2::before { content: '🍝'; font-size: 1.5rem; }
+.menu-category:nth-child(4) h2::before { content: '🥩'; font-size: 1.5rem; }
+.menu-category:nth-child(5) h2::before { content: '🦞'; font-size: 1.5rem; }
+.menu-category:nth-child(6) h2::before { content: '🍽️'; font-size: 1.5rem; }
+.menu-category:nth-child(7) h2::before { content: '🇮🇹'; font-size: 1.5rem; }
+.menu-category:nth-child(8) h2::before { content: '🍚'; font-size: 1.5rem; }
+.menu-category:nth-child(9) h2::before { content: '🍰'; font-size: 1.5rem; }
+.menu-category:nth-child(10) h2::before { content: '☕'; font-size: 1.5rem; }
+
+/* Dietary indicators */
+.menu-item .dietary-info {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.dietary-badge {
+    background: rgba(227, 196, 145, 0.2);
+    color: rgb(0, 23, 34);
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.dietary-badge.vegetarian {
+    background: rgba(76, 175, 80, 0.2);
+    color: #2e7d32;
+}
+
+.dietary-badge.vegan {
+    background: rgba(139, 195, 74, 0.2);
+    color: #558b2f;
+}
+
+.dietary-badge.gluten-free {
+    background: rgba(255, 193, 7, 0.2);
+    color: #f57c00;
+}
+
+/* Menu Page Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        padding: 60px 0;
+    }
+    
+    .menu-category {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .menu-category h2 {
+        font-size: 2rem;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem;
+    }
+    
+    .price {
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 1.2rem;
+        align-self: flex-start;
+    }
+    
+    .item-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .menu-note {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .menu-note p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-category {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .menu-category h2 {
+        font-size: 1.8rem;
+    }
+    
+    .menu-category h2::before {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .menu-item {
+        padding: 1rem;
+    }
+    
+    .item-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .item-info p {
+        font-size: 0.95rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .menu-note {
+        padding: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .menu-category {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .menu-item:hover {
+        background: none;
+        transform: none;
+    }
+    
+    .price {
+        background: none;
+        border: none;
+    }
+}
